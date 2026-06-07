@@ -50,7 +50,7 @@ def check_point_is_over_ten_or_under_zero(point):
 def find_student_by_id(student_list, id_wanna_find):
     return next((i for i, value in enumerate(student_list) if (value["ma_sv"] == id_wanna_find) ), -1)
 
-def find_student_by_id(student_list, input_wanna_find):
+def find_student_by_id_and_name(student_list, input_wanna_find):
     return next((i for i, value in enumerate(student_list) if (value["ma_sv"] == input_wanna_find or input_wanna_find.lower() in value["ten"].lower()) ), -1)
 
 def caculate_avg_and_rank(math, physic, chemistry):
@@ -212,11 +212,11 @@ def show_find_studet_by_id(student_list):
         if(not id_student_to_find):
             print("Id hoặc tên không được để trống !")
             continue 
-        if(find_student_by_id(student_list, id_student_to_find) == -1):
+        if(find_student_by_id_and_name(student_list, id_student_to_find) == -1):
             print("ID không tồn tại !")
             continue 
         break 
-    find_index = find_student_by_id(student_list, id_student_to_find)
+    find_index = find_student_by_id_and_name(student_list, id_student_to_find)
     print("-"*112)
     print(" DANH SÁCH TÌM KIẾM ".center(112, "="))
     print(f"| {"MÃ SV":<10} | {"TÊN":<25} | {"TOÁN":<10} | {"LÝ":<10} | {"HÓA":<10} | {"ĐTB":<10} | {"XẾP LOẠI":<15} |")
