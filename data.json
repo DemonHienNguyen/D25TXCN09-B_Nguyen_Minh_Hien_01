@@ -1,0 +1,29 @@
+[
+    {
+        "ma_sv": "SV001",
+        "ten": "Nguyen Van A",
+        "toan": 8.5,
+        "ly": 7.0,
+        "hoa": 9.0,
+        "diem_tb": 8.17,
+        "xep_loai": "Giỏi"
+    },
+    {
+        "ma_sv": "SV002",
+        "ten": "Tran Thi B",
+        "toan": 6.0,
+        "ly": 7.0,
+        "hoa": 8.0,
+        "diem_tb": 7.0,
+        "xep_loai": "Khá"
+    },
+    {
+        "ma_sv": "DE003",
+        "ten": "Demon",
+        "toan": 8.0,
+        "ly": 7.0,
+        "hoa": 6.0,
+        "diem_tb": 7.0,
+        "xep_loai": "Khá"
+    }
+]
